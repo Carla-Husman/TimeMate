@@ -1,0 +1,9 @@
+<div *ngIf="badges" class="container">
+    <div id="badges-container">
+        <div class="badge-column" *ngFor="let line of badges">
+            <div *ngFor="let badge of line">
+                <app-badge [badge]="badge" [isUnlocked]="isUnlocked(badge)"></app-badge>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="edit-task-form">
+    <h2 style="margin-left: 355px; margin-bottom: 30px;">Edit Task</h2>
+    <form (submit)="editTask()">
+        <div style="display: flex; flex-direction: column; margin-top: 2px; margin-left: 68px;">
+            <div>
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" name="taskName" [(ngModel)]="taskName" required>
+            </div>
+
+            <div>
+                <label for="startDate">Start Date:</label>
+                <input type="text" id="startDate" name="startDate" [(ngModel)]="startDate" readonly>
+            </div>
+
+            <div>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" [(ngModel)]="endDate" required>
+            </div>
+
+            <div style="display: flex;flex-wrap: wrap;">
+                <label for="isCompleted">Is Completed?</label>
+                <input type="checkbox" id="isCompleted" name="isCompleted" [(ngModel)]="isCompleted">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" [(ngModel)]="description"></textarea>
+            </div>
+
+            <div>
+                <label for="startTime">Start Time:</label>
+                <input type="text" id="startTime" name="startTime" [(ngModel)]="startTime" readonly>
+            </div>
+
+            <div>
+                <label for="endTime">End Time:</label>
+                <input type="time" id="endTime" name="endTime" [(ngModel)]="endTime" required>
+            </div>
+
+            <button type="submit">Save Changes</button>
+        </div>
+
+    </form>
+</div>

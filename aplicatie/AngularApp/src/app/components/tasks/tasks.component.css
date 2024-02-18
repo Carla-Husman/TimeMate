@@ -1,0 +1,33 @@
+.task-space {
+    margin-bottom: 10px
+}
+
+#yesTask{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #3A4D39;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#noTask{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    color: #3A4D39;
+    font-size: 30px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+p{
+    justify-content: center;
+    align-items: center;
+}

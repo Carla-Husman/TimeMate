@@ -1,0 +1,13 @@
+<header>
+  <div id="logo">
+    <img [src]="sidebarActive? 'assets/images/cross-icon.svg' : 'assets/images/menu-icon.svg'"
+      (click)="toggleSidebar.emit()" />
+    <div>
+      <img src="assets/images/TimeMate-logo.png" style="width: 50px;" /> TimeMate
+    </div>
+  </div>
+
+  <div id="user">
+    Hello, {{ username }}!
+  </div>
+</header>

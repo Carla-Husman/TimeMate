@@ -1,0 +1,221 @@
+.SignUp {
+    margin: 0;
+    width: 1520px;
+    height: 750px;
+    position: relative;
+    background: #3A4D39;
+    box-shadow: -4px 4px 26px rgba(75, 100, 119, 0.69);
+    overflow: hidden;
+}
+
+.Rectangle1 {
+    width: 930px;
+    height: 1024px;
+    left: 590px;
+    top: -15px;
+    position: absolute;
+    background: #ECE3CE;
+    border-bottom-left-radius: 47px;
+    border-top-left-radius: 47px;
+}
+
+.Leaf {
+    mix-blend-mode: luminosity;
+    object-fit: cover;
+    width: 1531.94px;
+    height: 569.37px;
+    left: 1531.61px;
+    top: 765.94px;
+    position: absolute;
+    transform: rotate(-179.98deg);
+    transform-origin: 0 0;
+}
+
+.GettingStartedWithTimemate {
+    width: 359px;
+    height: 139px;
+    left: 72px;
+    top: 38px;
+    position: absolute;
+    color: #ECE3CE;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 2.88px;
+    word-wrap: break-word;
+}
+
+.CreateAccount1 {
+    left: 829px;
+    top: 128px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 1.92px;
+    word-wrap: break-word;
+}
+
+.Password {
+    left: 832px;
+    top: 399px;
+    position: absolute;
+    color: #6A6A6A;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.12px;
+    word-wrap: break-word
+}
+
+.Username {
+    left: 832px;
+    top: 235px;
+    position: absolute;
+    color: #6A6A6A;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.12px;
+    word-wrap: break-word
+}
+
+
+.Email {
+    left: 832px;
+    top: 317px;
+    position: absolute;
+    color: #6A6A6A;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.12px;
+    word-wrap: break-word;
+}
+
+.AlreadyHaveAnAccountLogIn {
+    left: 829px;
+    top: 583px;
+    position: absolute;
+}
+
+#alreadyhave {
+    color: black;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.28px;
+    word-wrap: break-word
+}
+
+#login {
+    color: #3A4D39;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.28px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.Line1 {
+    width: 513px;
+    height: 0px;
+    left: 829px;
+    top: 275px;
+    position: absolute;
+    border: 1px #3A4D39 solid
+}
+
+.Line2 {
+    width: 513px;
+    height: 0px;
+    left: 829px;
+    top: 357px;
+    position: absolute;
+    border: 1px #3A4D39 solid
+}
+
+.Line3 {
+    width: 513px;
+    height: 0px;
+    left: 829px;
+    top: 439px;
+    position: absolute;
+    border: 1px #3A4D39 solid
+}
+
+.Rectangle4 {
+    width: 513px;
+    height: 57px;
+    left: 829px;
+    top: 496px;
+    position: absolute;
+    background: #3A4D39;
+    border-radius: 5px
+}
+
+.TimemateLogo {
+    width: 168px;
+    height: 168px;
+    left: 1324px;
+    top: 19px;
+    position: absolute;
+}
+
+.CreateAccount {
+    left: 1012px;
+    top: 507px;
+    position: absolute;
+    color: #ECE3CE;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 1.28px;
+    word-wrap: break-word
+}
+
+input{
+    position: absolute;
+    color: #6A6A6A;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.12px;
+    word-wrap: break-word;
+    background: #ece3ce00;
+    border: none;
+    width: 507px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 1.28px;
+    word-wrap: break-word;
+    width: 510px;
+    padding-left: 0;
+    margin-left: -180px;
+    height: 55px;
+    background: #3a4d3900;
+    border: none;
+    margin-top: -10px;
+}

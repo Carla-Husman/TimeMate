@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2ch #3A4D39;
+    border-radius: 5px;
+}
+
+#logo {
+    font-size: 24px;
+    color: #3A4D39;
+    font-weight: bold;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+img {
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    gap: 20px;
+}
+
+#user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Poppins';
+    color: #3A4D39;
+}

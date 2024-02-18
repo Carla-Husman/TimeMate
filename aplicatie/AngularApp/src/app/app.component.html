@@ -1,0 +1,13 @@
+<div *ngIf="!isLogedIn()">
+  <router-outlet></router-outlet>
+</div>
+
+<div *ngIf="isLogedIn()" id="container" [ngClass]="{sidebarActive: sidebarActive}">
+  <app-side-bar></app-side-bar>
+  <div id="contentContainer">
+    <app-header (toggleSidebar)="sidebarActive = !sidebarActive" [sidebarActive]="sidebarActive"></app-header>
+    <div id="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<ng-container *ngIf="display$ | async as display">
+    <section [class.open]="display === 'open'" (click)="close()">
+        <div (click)="$event.stopPropagation()">
+            <button class="close" type="button" (click)="close()">X</button>
+            <form (ngSubmit)="submitForm()" #editForm="ngForm">
+                <label style="margin-top: 27px;" for="email">New email:</label>
+                <input type="email" id="email" name="email" [(ngModel)]="newEmail" />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" [(ngModel)]="introducedPassword" required="" />
+
+                {{ errorMessage }}
+
+                <button type="submit" id="submit">Save Changes</button>
+            </form>
+
+        </div>
+    </section>
+</ng-container>

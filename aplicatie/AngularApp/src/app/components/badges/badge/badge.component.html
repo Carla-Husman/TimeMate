@@ -1,0 +1,15 @@
+<div class="badge-container">
+    <div class="badge-image">
+        <img [src]="badge.src" *ngIf="!isUnlocked" style="filter: grayscale(1)">
+        <img [src]="badge.src" *ngIf="isUnlocked">
+    </div>
+    <div class="badge-info">
+        <h3 style="font-size: 20px;padding-top: 14px;">{{ badge.title }}</h3>
+        <p style="text-align: center;">{{ badge.description }}</p>
+        <p><em>Necessary Points: {{ badge.necessaryPoints }}</em></p>
+    </div>
+    <div class="badge-checkbox" style="margin-right: 20px;" [ngClass]="{ 'unlocked': isUnlocked, 'locked': !isUnlocked }">
+        <img style="width: 30px;height: 30px;" *ngIf="isUnlocked" src="assets/images/check-icon.svg">
+        <img style="width: 30px;height: 30px;" *ngIf="!isUnlocked" src="assets/images/uncheck-icon.svg">
+    </div>
+</div>

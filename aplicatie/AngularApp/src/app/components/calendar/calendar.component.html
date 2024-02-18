@@ -1,0 +1,41 @@
+<div id="progress-bars">
+  <div class="progress-container">
+    <div class="progress-bar-completed" [style.width.%]="progressValue">
+      <img id="progress-icon" src="assets/images/cat-icon.svg" alt="progress-bar" />
+    </div>
+  </div>
+</div>
+<div *ngIf="calendar">
+  <div id="task-calendar">
+    <div id="tasks-list">
+      <app-tasks [selectedDayTasks]="selectedDayTasks" [selectedDay]="selectedDay"></app-tasks>
+    </div>
+
+    <div id="calendar">
+      <div id="headerButton">
+        <button (click)="goToPreviousMonth()">
+          < </button>
+            <h2>{{ monthAndYear }}</h2>
+            <button (click)="goToNextMonth()">
+              >
+            </button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th *ngFor="let day of daysOfWeek">{{ day }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let week of calendar.weeks">
+            <td *ngFor="let day of week.days" [class.other-month]="day.otherMonth" [class.has-task]="hasTask(day)"
+              (click)="showTasksForDay(day)" (dblclick)="redirectToPageOnDoubleClick(day)">
+              {{ day.day }}
+              <div *ngIf="hasTask(day)"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

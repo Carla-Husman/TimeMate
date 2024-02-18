@@ -1,0 +1,41 @@
+<div class="task-form">
+    <h2 style="margin-left: 130px;">Create Task</h2>
+
+    <form (submit)="createTask()">
+        <div id="left">
+            <div id="column-container">
+                <div class="form-column">
+                    <label for="taskName">Task Name:</label>
+                    <input type="text" id="taskName" name="taskName" [(ngModel)]="taskName"
+                        placeholder="Enter task name" required>
+
+                    <label for="startDate" style="margin-top: 31px;">Start Date:</label>
+                    <input type="date" id="startDate" name="startDate" [(ngModel)]="startDate" readonly>
+
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" name="endDate" [(ngModel)]="endDate">
+                </div>
+
+                <div class="form-column">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" [(ngModel)]="description"
+                        placeholder="Enter task description"></textarea>
+
+                    <label for="startTime">Start Time:</label>
+                    <input type="time" id="startTime" name="startTime" [(ngModel)]="startTime">
+
+                    <label for="endTime">End Time:</label>
+                    <input type="time" id="endTime" name="endTime" [(ngModel)]="endTime">
+                </div>
+            </div>
+
+            <div class="center">
+                <button type="submit">Create Task</button>
+            </div>
+            <p style="align-items: center; align-content: center;">{{error}}</p>
+        </div>
+        <div id="right">
+            <img src="assets/images/createTask-icon.jpg" />
+        </div>
+    </form>
+</div>

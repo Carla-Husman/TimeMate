@@ -1,0 +1,22 @@
+<div *ngIf="task" [style.background-color]="!task.isCompleted ? randomColorForBackground() : '#F5F5F5'"
+    [style.color]="!task.isCompleted ? randomColorForText() : '#616161'" id="task" (click)="editTask(task)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+        style="margin-left: 17px; margin-top:16px;">
+        <circle cx="16" cy="16" r="16" [style.fill]="!task.isCompleted ? randomColorForEllipse() : '#BDBDBD'" />
+    </svg>
+    <div style="display: flex; flex-direction: column;">
+
+        <div id="taskContent">
+            <div>
+                {{ task.title }}
+            </div>
+            <div>
+                {{ task.startDate | date:'HH:mm':'UTC'}} - {{ task.dueDate | date:'HH:mm':'UTC'}}
+            </div>
+        </div>
+    </div>
+    <!---
+    <div>
+        {{ task.isCompleted ? 'Completed' : 'Not Completed' }}
+    </div>-->
+</div>

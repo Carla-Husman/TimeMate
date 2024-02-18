@@ -1,0 +1,45 @@
+<div id="profile" *ngIf="user">
+    <div id="content">
+        <div id="profile-card">
+            <div id="profile-card-img">
+                <img style="margin-top: 30px; margin-bottom: 30px;" [src]="src" />
+            </div>
+            <p id="username">{{ user.name }}</p>
+            <p id="badde-name"><em>{{ lastBadge }}</em></p>
+            <div id="edit" (click)="open()">
+                <img style="margin-top: 60px; cursor: pointer;" src="assets/images/edit-icon.svg" />
+            </div>
+        </div>
+
+        <div id="profile-information">
+            <div id="profile-i">
+                <div id="profile-information-header">
+                    <p>Profile Information</p>
+                </div>
+                <div id="information">
+                    <div id="email">
+                        Email: <span>{{ user.email }}</span>
+                    </div>
+                    <div id="points">
+                        Current points: <span>{{ user.streak}}</span>
+
+                    </div>
+                </div>
+            </div>
+            <div id="statistics">
+                <div id="statistics-header">
+                    <p>Statistics</p>
+                </div>
+                <div id="progress-bars">
+                    <span id="progress">Completed tasks this month:</span>
+                    <div class="progress-container">
+                        <div class="progress-bar-completed" [style.width.%]="progressValue">
+                            <span style="color: #ECE3CE; padding-left: 47%;">{{ progressValue }}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-edit-modal></app-edit-modal>

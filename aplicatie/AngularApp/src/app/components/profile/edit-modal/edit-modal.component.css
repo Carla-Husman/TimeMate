@@ -1,0 +1,110 @@
+section {
+    visibility: hidden;
+    opacity: 0;
+    font-family: Poppins;
+    color: #dbe3db;
+    justify-content: center;
+    align-items: center;
+
+    &.open {
+        visibility: inherit;
+        opacity: 1;
+    }
+
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms ease-in;
+
+    >div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+
+        height: 400px;
+        width: 400px;
+
+        background: #394e38e9;
+        padding: 64px;
+
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.973);
+        box-shadow: 0 0 8px 4px rgba(94, 69, 69, 0.653);
+    }
+
+    button.close {
+        background: none;
+        color: inherit;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: none;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        padding: 16px;
+    }
+
+    background-color: rgba(201, 188, 171, 0.47);
+}
+
+#submit {
+    background-color: rgb(201, 188, 171);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.0s ease 0s;
+    margin-top: 45px;
+    margin-left: 103px;
+}
+
+input:required {
+    border: 1px solid rgb(108, 23, 23);
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+input {
+    margin-left: 15px;
+    color: #2d3c2c;
+    background-color: rgb(225, 232, 221);
+    border-radius: 5px;
+}
+
+input[type="password"]:disabled {
+    background-color: #cacbca;
+    color: rgb(149, 73, 7);
+    cursor: not-allowed;
+}
+
+#submit:enabled{
+    background-color: #ECE3CE;
+    color: #2d3c2c;
+    cursor: pointer;
+}
+
+#submit:disabled{
+    background-color: #cacbca;
+    color: rgb(111, 109, 107);
+    cursor: not-allowed;
+}

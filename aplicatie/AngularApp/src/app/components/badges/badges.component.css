@@ -1,0 +1,32 @@
+.container {
+    overflow-x: auto;
+    padding-top: 23px;
+    border-radius: 90px;
+    border-color: #3A4D39;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 0.4ch #3A4D39;
+    width: 1260px;
+}
+
+#badges-container {
+    display: flex;
+}
+
+.badge-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.container::-webkit-scrollbar {
+    height: 10px;
+    width: 50px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #3a4d3900;
+    border-radius: 13px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+}

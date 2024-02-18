@@ -1,0 +1,11 @@
+<div *ngIf="selectedDayTasks.length > 0; else noTasks">
+  <p id="yesTask">My tasks this day:</p>
+  <div *ngFor="let task of selectedDayTasks" style>
+    <app-task [task]="task"></app-task>
+    <div class="task-space"></div>
+  </div>
+</div>
+
+<ng-template #noTasks>
+  <p id="noTask">Schedule a task!</p>
+</ng-template>

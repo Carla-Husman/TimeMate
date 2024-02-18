@@ -1,0 +1,126 @@
+#sidebar {
+    width: 200px;
+    height: 100%;
+    background: #3A4D39;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    border-right: 1px solid #CCC;
+    border-radius: 10px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#moto {
+    color: #ECE3CE;
+    font-style: italic;
+    font-weight: 300;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 13.9%;
+    text-align: center;
+    border-bottom:1px solid #ECE3CE;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #ECE3CE;
+    padding: 15px 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    line-height: 133.9%;
+    /* 18.746px */
+    letter-spacing: 1.12px;
+    cursor: pointer;
+
+    img {
+        margin-left: -30px;
+        padding-right: 20px;
+    }
+}
+
+a:hover {
+    background-color: #ECE3CE;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 10px;
+    color: #3A4D39;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 133.9%;
+    letter-spacing: 1.15px;
+    text-shadow: 0px 4px 4px #a7aea7;
+}
+
+a.profile {
+    img {
+        content: url('/assets/images/profile-icon.svg');
+    }
+}
+
+a:hover.profile {
+    img {
+        content: url('/assets/images/profile-icon-hover.svg');
+    }
+}
+
+a.calendar {
+    img {
+        padding-left: 15px;
+        content: url('/assets/images/calendar-icon.svg');
+    }
+}
+
+a:hover.calendar {
+    img {
+        content: url('/assets/images/calendar-icon-hover.svg');
+    }
+}
+
+a.settings {
+    img {
+        padding-left: 10px;
+        content: url('/assets/images/settings-icon.svg');
+    }
+}
+
+a:hover.settings {
+    img {
+        content: url('/assets/images/settings-icon-hover.svg');
+    }
+}
+
+a.logout {
+    img {
+        content: url('/assets/images/logout-icon.svg');
+    }
+}
+
+a:hover.logout {
+    img {
+        content: url('/assets/images/logout-icon-hover.svg');
+    }
+}
+
+a.achievement{
+    img{
+        content: url('/assets/images/achievement-icon.svg');
+    }
+}
+
+a:hover.achievement{
+    img{
+        content: url('/assets/images/achievement-icon-hover.svg');
+    }
+}

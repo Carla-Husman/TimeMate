@@ -1,0 +1,36 @@
+.badge-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ECE3CE;
+    border-radius: 50px;
+    width: 500px;
+    height: 125px;
+    color: #3A4D39;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.badge-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.badge-image {
+    margin-right: 20px;
+    margin-left: 23px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.badge-checkbox {
+    margin-left: 20px;
+}

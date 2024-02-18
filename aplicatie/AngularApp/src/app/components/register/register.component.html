@@ -1,0 +1,52 @@
+<div class="SignUp">
+    <div class="Rectangle1"></div>
+    <img class="Leaf" src="assets/images/leaf.png" />
+    <div class="GettingStartedWithTimemate"> Getting <br />Started With <br />TimeMate</div>
+    <div *ngIf="isRegistrationMode" class="CreateAccount1"> Create Account</div>
+    <div *ngIf="!isRegistrationMode" class="CreateAccount1"> Log in</div>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="myForm">
+        <div class="Username">
+            <input type="text" id="username" name="username" formControlName="username" required="" />
+            <div style="margin-top: 37px; color: rgb(164, 152, 118);"
+                *ngIf="myForm.get('username')!.invalid && (myForm.get('username')!.dirty || myForm.get('username')!.touched)">
+                <div *ngIf="myForm.get('username')!.hasError('required')">Mandatory</div>
+                <div *ngIf="myForm.get('username')!.hasError('pattern')">Invalid Format</div>
+            </div>
+        </div>
+
+        <div class="Email" *ngIf="isRegistrationMode">
+            <input type="email" id="email" name="email" formControlName="email" required />
+            <div style="margin-top: 37px; color: rgb(164, 152, 118);"
+                *ngIf="myForm.get('email')!.invalid && (myForm.get('email')!.dirty || myForm.get('email')!.touched)">
+                <div *ngIf="myForm.get('email')!.hasError('required')">Mandatory</div>
+                <div *ngIf="myForm.get('email')!.hasError('pattern')">Invalid Format</div>
+            </div>
+        </div>
+
+        <div class="Password" [ngStyle]="{'margin-top.px': !isRegistrationMode ? -40 : 0}">
+            <input type="password" id="password" name="password" formControlName="password" required />
+            <div style="margin-top: 37px; color: rgb(164, 152, 118);"
+                *ngIf="myForm.get('password')!.invalid && (myForm.get('password')!.dirty || myForm.get('password')!.touched)">
+                <div *ngIf="myForm.get('password')!.hasError('required')">Mandatory</div>
+                <div *ngIf="myForm.get('password')!.hasError('pattern')">Invalid format</div>
+            </div>
+        </div>
+
+        <div class="Rectangle4" [ngStyle]="{'margin-top.px': !isRegistrationMode ? -40 : 0}"></div>
+        <button *ngIf="isRegistrationMode" class="CreateAccount" type="submit">Sign Up</button>
+        <button *ngIf="!isRegistrationMode" style="margin-top: -50px;" class="CreateAccount" type="submit">Sign In</button>
+    </form>
+
+
+    <div *ngIf="isRegistrationMode" class="AlreadyHaveAnAccountLogIn"><span id="alreadyhave">Already have an
+            account?</span><span id="login" (click)="toggleMode()"> Log
+            In</span></div>
+    <div *ngIf="!isRegistrationMode" class="AlreadyHaveAnAccountLogIn" style="margin-top: -40px"><span id="alreadyhave">Doesn't have an
+            account?</span><span id="login" (click)="toggleMode()"> Register</span></div>
+    <div class="Line1"></div>
+    <div *ngIf="isRegistrationMode" class="Line2" ></div>
+    <div class="Line3" [ngStyle]="{'margin-top.px': !isRegistrationMode ? -40 : 0}"></div>
+
+    <img class="TimemateLogo" src="assets/images/TimeMate-logo.png" />
+</div>
