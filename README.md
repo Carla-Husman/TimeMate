@@ -5,6 +5,7 @@ The project was implemented together with [aeerdna01](https://github.com/aeerdna
 
 ## Technologies 
 - Java
+- SpringBoot
 - Angular
 - MySQL
 - MongoDB
